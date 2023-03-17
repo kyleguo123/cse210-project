@@ -69,7 +69,9 @@ class Program
             letter = "F";
             Console.WriteLine("You can do better next time!");
         }
-        Console.WriteLine($"Your grade is: {letter}");
+        {
+            Console.WriteLine($"You grade is {letter}");
+        }
     }
 }
 
