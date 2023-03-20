@@ -2,14 +2,14 @@ using System;
 
 public class Scripture{
 
-public string reference;
+private string reference;
 List<Word> words= new List<Word>();
 public List<int> numbers = new List<int>();
 
     public Scripture(Reference scripture ){
-        reference = scripture._reference;
+        reference = scripture.getReference();
         int counter = 0;
-        string[] parts = scripture._verse.Split(" ");
+        string[] parts = scripture.getVerse().Split(" ");
         foreach(string part in parts){
             numbers.Add(counter);
             Word word = new Word(part);

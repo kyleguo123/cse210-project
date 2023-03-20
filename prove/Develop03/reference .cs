@@ -1,7 +1,7 @@
 public class Reference{
 
-    public string _reference;
-    public string _verse;
+    private string _reference;
+    private string _verse;
 
     List<string> s_list = new List<string>(){
         "1 Nephi 1: 2-Yea, I make a record in the alanguage of my father, which consists of the learning of the Jews and the language of the Egyptians." , 
@@ -18,5 +18,14 @@ public class Reference{
         _reference = parts[0];
         _verse = parts[1];
         
+    }
+
+    public string getReference(){
+        
+        return _reference;
+    }
+
+    public string getVerse(){
+        return _verse;
     }
 }

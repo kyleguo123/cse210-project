@@ -16,7 +16,7 @@ class Program
 
 
         do{
-           
+            Console.Clear();
             scripture.display();
             Console.WriteLine("Press enter to continue or type quit to finish. ");
             entry = Console.ReadLine();
@@ -29,7 +29,7 @@ class Program
             }
         }
         while(entry!= "quit" );
-
+        Console.Clear();
         scripture.display();
     }
 }
