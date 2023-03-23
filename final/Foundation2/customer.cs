@@ -1,19 +1,19 @@
 class Customer{
 
-    private string cname;
+    private string kg_cname;
     
     private Address address;
 
 
     public Customer(string name, Address address)
     {
-        this.cname = name;
+        this.kg_cname = name;
         this.address = address;
     }
 
     public string GetName()
     {
-        return cname;
+        return kg_cname;
     }
     public bool isinUSA(){
         return address.intheUSA();

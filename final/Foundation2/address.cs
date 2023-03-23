@@ -1,26 +1,26 @@
 class Address{
 
-    private string street;
-    private string city;
-    private string state;
-    private string country;
+    private string kg_street;
+    private string kg_city;
+    private string kg_state;
+    private string kg_country;
 
     public Address(string street, string city, string state, string country){
 
-        this.street = street;
-        this.city = city;
-        this.state = state;
-        this.country = country;
+        this.kg_street = street;
+        this.kg_city = city;
+        this.kg_state = state;
+        this.kg_country = country;
 
     }
 
     public bool intheUSA(){
 
-        return country=="USA";
+        return kg_country=="USA";
     }
 
     public string fulladdress(){
 
-        return $"{street}\n {city}, {state} {country}";
+        return $"{kg_street}\n {kg_city}, {kg_state} {kg_country}";
     }
 }
