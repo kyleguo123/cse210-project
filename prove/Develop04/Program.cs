@@ -18,7 +18,7 @@ class Program
 
             if(entry =="1" ){
                 breathing.inro();
-                
+                breathing.do_activity();
                 breathing.end();
             }
             else if (entry=="2"){

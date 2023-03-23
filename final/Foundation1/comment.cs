@@ -1,7 +1,7 @@
 class Comment{
 
-    public string name;
-    public string comment;
+    public string kg_name;
+    public string kg_comment;
 
     // public Comment(string name, string comment){
     //     this.name = name;
@@ -10,10 +10,10 @@ class Comment{
 
 
     List<string> names= new List<string>{
-        "J",
-        "K",
-        "L",
-        "C"
+        "John",
+        "Kyle",
+        "Laurn",
+        "Cao"
     };
 
     List<string> comments = new List<string>{
@@ -28,14 +28,14 @@ class Comment{
         
         Random random = new Random();
         int randomIndex = random.Next(names.Count);
-        name = names[randomIndex];
-        comment= comments[random.Next(comments.Count)];
+        kg_name = names[randomIndex];
+        kg_comment= comments[random.Next(comments.Count)];
 
 
     }
  
     public void display(){
-        Console.WriteLine($"{name}\n \"{comment}\" \n \n");
+        Console.WriteLine($"{kg_name}\n \"{kg_comment}\" \n \n");
     }
 
 }

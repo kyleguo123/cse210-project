@@ -1,13 +1,13 @@
 class Video {
 
-    public string title;
-    public string author;
-    public int length;
+    public string kg_title;
+    public string kg_author;
+    public int kg_length;
 
     public Video (string title, string author, int length){
-        this.title = title;
-        this.author = author;
-        this.length = length;
+        this.kg_title = title;
+        this.kg_author = author;
+        this.kg_length = length;
     }
     List<Comment> comments = new List<Comment>{
         new Comment(),
@@ -27,7 +27,7 @@ class Video {
 
 
     public void display(){
-        Console.WriteLine($"Title: {title}, Author name: {author}, Duration: {length}");
+        Console.WriteLine($"Title: {kg_title}, Author name: {kg_author}, Duration: {kg_length}");
         Console.WriteLine($"Comments : {GetNumberComment()}");
         foreach(Comment comment in comments){
             comment.display();
