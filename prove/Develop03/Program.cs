@@ -2,10 +2,7 @@ using System;
 
 class Program
 {
-    //     List<string> words = new List<string>(){
-
-    //     "3 Philip, and Bartholomew; Thomas, and Matthew the apublican; James the son of Alphæus, and Lebbæus, whose surname was Thaddæus;"
-    // };
+    // Kyle Guo, Austin Reeves, Jayton Crockett, Jacob Strong, Michael Torres
 
 
     static void Main(string[] args)
@@ -18,7 +15,7 @@ class Program
         do{
             Console.Clear();
             scripture.display();
-            Console.WriteLine("Press enter to continue or type quit to finish. ");
+            Console.WriteLine($"\n" +"Press enter to continue or type quit to finish. ");
             entry = Console.ReadLine();
              scripture.hide_word();
             scripture.hide_word();
