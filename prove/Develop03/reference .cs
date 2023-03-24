@@ -1,7 +1,7 @@
 public class Reference{
 
-    private string _reference;
-    private string _verse;
+    private string kg_reference;
+    private string kg_verse;
 
     List<string> s_list = new List<string>(){
         "1 Nephi 1: 2-Yea, I make a record in the alanguage of my father, which consists of the learning of the Jews and the language of the Egyptians." , 
@@ -15,17 +15,17 @@ public class Reference{
         Console.WriteLine("Plean enter from 0 - 2 in order to get your scripture: ");
         int userinput=  int.Parse(Console.ReadLine());
         string[] parts = s_list[userinput].Split("-");
-        _reference = parts[0];
-        _verse = parts[1];
+        kg_reference = parts[0];
+        kg_verse = parts[1];
         
     }
 
     public string getReference(){
         
-        return _reference;
+        return kg_reference;
     }
 
     public string getVerse(){
-        return _verse;
+        return kg_verse;
     }
 }
