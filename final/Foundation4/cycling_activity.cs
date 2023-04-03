@@ -1,3 +1,4 @@
+// Name: Kyle Guo Date: Apirl 3 2023
 public class CyclingActivity :Activity
 {
 
@@ -6,12 +7,10 @@ public class CyclingActivity :Activity
       this.kg_distance= distance; 
         kg_name = "Cycling";
     }
-
     public override float GetPace()
       {
            return   kg_length/kg_distance;
       }
-
 
     public override float getDistance()
       {

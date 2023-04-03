@@ -1,3 +1,4 @@
+// Name: Kyle Guo Date: Apirl 3 2023
 public class SwimmingActivity:Activity
 {
       private float kg_laps;
