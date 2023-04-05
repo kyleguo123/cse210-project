@@ -24,23 +24,6 @@ public abstract class Event
     }
 
   public abstract void Details();
-    // public string GetStandardDetails() 
-    // {
-    //     return $"Title: {kg_title}\nDescription: {kg_description}\nDate: {date}\nTime: {time}\nAddress: {address.GetAddress()}";
-    // }
-
-    // public string GetFullDetails()
-    // {
-    //   return $"Title: {kg_title}\nDescription: {kg_description}\nDate: {date}\nTime: {time}\nAddress: {address.GetAddress()},E-MAIL:{kg_additionalInfo}";
-    // }
-
-    // public string ShortDescription()
-    // {
-    //   return $"Title: {kg_title}\nDescription: {kg_description}\nDate: {date}\nTime: {time}\nAddress: {address.GetAddress()},weather:{kg_additionalInfo}";
-    // }
-
-
-    
-
+  
 
 }
