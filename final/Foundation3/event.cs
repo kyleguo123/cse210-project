@@ -1,15 +1,15 @@
 // Name: Kyle Guo Date: Apirl 3 2023
 public abstract class Event
 {
-  private string kg_title;
-  private string kg_description; 
+  protected string kg_title;
+  protected string kg_description; 
 
-  private string kg_additionalInfo;
-  private string kg_name;
-  private DateTime date;
-  private TimeSpan time;
+  protected string kg_additionalInfo;
+  protected string kg_name;
+  protected DateTime date;
+  protected TimeSpan time;
   
-  private Address address;
+  protected Address address;
 
   public Event(string title, string description, DateTime date, TimeSpan time, Address address,string additionalInfo, string name) 
   {
@@ -23,20 +23,21 @@ public abstract class Event
         this.kg_name = name;
     }
 
-    public string GetStandardDetails() 
-    {
-        return $"Title: {kg_title}\nDescription: {kg_description}\nDate: {date}\nTime: {time}\nAddress: {address.GetAddress()}";
-    }
+  public abstract void Details();
+    // public string GetStandardDetails() 
+    // {
+    //     return $"Title: {kg_title}\nDescription: {kg_description}\nDate: {date}\nTime: {time}\nAddress: {address.GetAddress()}";
+    // }
 
-    public string GetFullDetails()
-    {
-      return $"Title: {kg_title}\nDescription: {kg_description}\nDate: {date}\nTime: {time}\nAddress: {address.GetAddress()},E-MAIL:{kg_additionalInfo}";
-    }
+    // public string GetFullDetails()
+    // {
+    //   return $"Title: {kg_title}\nDescription: {kg_description}\nDate: {date}\nTime: {time}\nAddress: {address.GetAddress()},E-MAIL:{kg_additionalInfo}";
+    // }
 
-    public string ShortDescription()
-    {
-      return $"Title: {kg_title}\nDescription: {kg_description}\nDate: {date}\nTime: {time}\nAddress: {address.GetAddress()},weather:{kg_additionalInfo}";
-    }
+    // public string ShortDescription()
+    // {
+    //   return $"Title: {kg_title}\nDescription: {kg_description}\nDate: {date}\nTime: {time}\nAddress: {address.GetAddress()},weather:{kg_additionalInfo}";
+    // }
 
 
     

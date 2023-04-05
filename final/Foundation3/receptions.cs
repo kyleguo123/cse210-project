@@ -5,4 +5,9 @@ public class Receptions:Event
     {
  
     }
+    public override void Details()
+   {
+    Console.WriteLine($"Title: {kg_title}\nDescription: {kg_description}\nDate: {date}\nTime: {time}\nAddress: {address.GetAddress()},E-MAIL:{kg_additionalInfo}");
+    
+   }
 }
